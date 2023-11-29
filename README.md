@@ -9,8 +9,8 @@ Una aplicación Django que proporciona datos sobre volcanes en Chile, incluyendo
 
 ## Instalación
 
-- Clona el repositorio: 'git clone https://github.com/BarbaraLopez912/Tercerapre-entregaLopez.git'
-- Entra al directorio: 'cd VolcanesChile'
+- Clona el repositorio: 'git clone https://github.com/BarbaraLopez912/Tercerapre-entregaLopez.git'.
+- Entra al directorio raíz del proyecto.
 - Crea y activa un entorio virtual.
 - Ejecuta las migraciones: 'python manage.py migrate'
 - Inicia el servidor: 'python manage.py runserver'
