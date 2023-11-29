@@ -1,0 +1,30 @@
+{% extends 'base_secundaria.html' %}
+
+{% block cambio %}
+
+<div>
+  <br>
+  <h5>Buscador de Volcanes:</h5>
+  <br>
+    <form action="/app/buscar_volcanes" method="GET">
+     <div style="display: flex;">
+        {{ form.as_p }}
+       <div style="margin-left: 10px;">
+        <input type="submit" value="Buscar" style="width: 100px; height: 30px;">
+       </div>
+     </div>
+    </form>
+</div>
+<div>
+
+</div>
+<div style="text-align: center;">
+  <br>
+  <h3 style="margin-bottom: 20px;">Volcanes de Chile:</h3>
+    <br>
+  {% for volcan in volcanes %}
+    <p>El volcán {{ volcan.nombre }} se encuentra en la Región de {{ volcan.region }}</p>
+    <hr>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{%extends 'base_secundaria.html'%}
+
+{% block cambio %}
+
+<div>
+<br>
+<h3>Algunos de los productos volcánicos más comunes son:</h3>
+<br>
+    {% for producto in productos  %}
+        <p>El producto "{{producto.producto}}" puede tener un alcance {{producto.alcance}}</p>
+        <hr>
+    {% endfor %}
+</div>
+{% endblock %}
